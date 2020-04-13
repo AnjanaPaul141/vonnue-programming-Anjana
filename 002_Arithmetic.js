@@ -39,8 +39,7 @@ Modulus(num1 , num2);
 
 
 //greaterthanFunction
-function greaterthanFunction(num1 , num2)
-{
+const greaterthanFunction = (num1 , num2)=>{
     if (num1 > num2)
     {
         console.log("yes, num1 is greater than num2");
@@ -53,8 +52,7 @@ greaterthanFunction(num1 , num2);
 
 
 //lessthanFunction
-function lessthanFunction(num1 , num2)
-{
+const lessthanFunction = (num1 , num2)=>{
     if (num1 < num2)
     {
         console.log("yes, num1 is less than num2");
@@ -67,8 +65,7 @@ lessthanFunction(num1 , num2);
 
 
 //equaltoFunction
-function equaltoFunction(num1 , num2)
-{
+const equaltoFunction = (num1 , num2)=>{
     if (num1 = num2)
     {
         console.log("yes, num1 is equal to num2");
