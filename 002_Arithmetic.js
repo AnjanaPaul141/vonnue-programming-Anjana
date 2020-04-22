@@ -2,76 +2,60 @@ const readlineSync = require("readline-sync");
 const num1 = parseInt(readlineSync.question("enter 1st number:"));
 const num2 = parseInt(readlineSync.question("enter 2nd number:"));
 
-const Addition = (num1 , num2)=> {  //Addition
-   const sum = num1 + num2;
-   console.log("sum is: ", sum);
+//addition
+const addition = (num1, num2) => {
+  return num1 + num2;
 }
-Addition(num1 , num2);
 
-const substraction = (num1 , num2)=>{
-   const difference = num1 - num2;
-   console.log("difference is: ", difference);
+//substraction
+const substraction = (num1, num2) => {
+  return num1 - num2;
 }
-substraction(num1 , num2);        
 
-
-const multiplication = (num1 , num2)=> {
-   const multiplication = num1 * num2;
-   console.log("multiplication is: ", multiplication);
+//multiplication
+const multiplication = (num1, num2) => {
+  return num1 * num2;
 }
-multiplication(num1 , num2);
 
 
-const Division = (num1 , num2)=>{
-   const Division = num1 / num2;
-   console.log("Division is: ", Division);
-    
+//Division
+const division = (num1, num2) => {
+  return num1 / num2; 
 }
-Division(num1 , num2);
 
-
-const Modulus = (num1 , num2)=>{
-    const Modulus = num1 % num2;
-    console.log("Modulus is: ", Modulus);
-    
+//modulus
+const modulus = (num1, num2) => {
+  return num1 % num2;
 }
-Modulus(num1 , num2);
 
 
 //greaterthanFunction
-const greaterthanFunction = (num1 , num2)=>{
-    if (num1 > num2)
-    {
-        console.log("yes, num1 is greater than num2");
-    }
-    else{
-        console.log("yes, num2 is greater than num1");
-        }
-}    
-greaterthanFunction(num1 , num2);
+const arithmeticgreaterthan = (num1, num2) => {
+  if (num1 > num2) {
+    console.log("yes, num1 is greater than num2");
+  }
+}
 
 
 //lessthanFunction
-const lessthanFunction = (num1 , num2)=>{
-    if (num1 < num2)
-    {
-        console.log("yes, num1 is less than num2");
-    }
-    else{
-        console.log("yes, num2 is less than num1");
-        }
+const arithmeticlessthan = (num1, num2) => {
+  if (num1 < num2) {
+    console.log("yes, num1 is less than num2");
+  }
 }
-lessthanFunction(num1 , num2);
-
 
 //equaltoFunction
-const equaltoFunction = (num1 , num2)=>{
-    if (num1 = num2)
-    {
-        console.log("yes, num1 is equal to num2");
-    }
-    else{
-    console.log("yes, num1 is not equal to num2");
-    }
+const arithmeticequalto = (num1, num2) => {
+  if (num1 === num2) {
+    console.log("yes, num1 is equal to num2");
+  }
 }
-equaltoFunction(num1 , num2);
+
+console.log("sum is: ", addition(num1, num2));
+console.log("difference is: ", substraction(num1, num2));
+console.log("multiplication is: ", multiplication(num1, num2));
+console.log("Division is: ", division(num1, num2));
+console.log("Modulus is: ", modulus(num1, num2));
+arithmeticgreaterthan(num1, num2);
+arithmeticlessthan(num1, num2);
+arithmeticequalto(num1, num2);
