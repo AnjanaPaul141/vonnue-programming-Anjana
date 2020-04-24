@@ -1,12 +1,11 @@
-const Array = [2, 3, 4];
-const squaresofelements = (Array) => {
-    let square = 0;
-    for (let i = 0; i < Array.length; i++)
-     {
-        square = (Array[i] ** 2); 
-        console.log(square);
-    }
-    
-}
+const readlineSync = require("readline-sync");
+const array = readlineSync.question("enter the numbers:");
 
-squaresofelements(Array);
+const squaresOfElements = (array) => {
+    let square = "";
+    for (let i = 0; i < array.length; i++) {
+        square = array[i] ** 2;  
+        console.log("square:" +square);
+    }
+}
+squaresOfElements(array);
